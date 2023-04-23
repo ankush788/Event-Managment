@@ -1,0 +1,13 @@
+
+<%- include("partials/header"); -%>
+
+<h1> EVENT DETIAL</h1>
+
+<ul class="list-group">
+  <li class="list-group-item ">Event NAME = <%= event.eventName %></li>
+  <li class="list-group-item">EVENT ID = <%= event._id %></li>
+  <li class="list-group-item">DATE = <%=event.date %> </li>
+  <li class="list-group-item ">LOCATION = <%=event.location %></li>
+  <li class="list-group-item"> PRICE OF TICKET = <%= event.price%></li>
+</ul>
+<%- include("partials/footer"); -%>

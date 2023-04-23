@@ -1,0 +1,34 @@
+<%- include("partials/header"); -%>
+    <h1>BUY TICKET</h1>
+    <form class="add_ticket" action="/add_ticket" method="post">
+
+        <div class="form-group">
+         <label>PERSON NAME </label>
+        <input class="form-control" type="text" name="personName" autocomplete="off">
+
+         <label>GENDER</label>
+                 <select class="form-control chosenn" name="gender" required="required">
+                   <option value="" selected>GENDER</option>
+                   <option value="Male">MALE</option>
+                   <option value="Female">FEMALE</option>
+                   <option value="Other">OTHER</option>
+                 </select>
+               
+         <label>AGE</label>
+        <input class="form-control" type="text" name="age" autocomplete="off">
+
+             <label>EVENT NAME</label>
+         <select class="form-control chosenn" name="eventName" required="required">
+           <option value="" selected>Event Name</option>
+           
+        <% for( let event of events ){ %>
+   <option value = "<%= event.eventName %>" > <%= event.eventName %></option>
+    <% } %>
+         </select>
+    
+         </div>
+     <button class="btn btn-primary" type="submit" name="button">Buy Ticket</button>
+
+    </form>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+    <h1>REGISTRATION </h1>
+    <form class="" action="/registration" method="post">
+         
+       <div class="form-group">
+      
+         <label>PERSON NAME </label>
+        <input class="form-control" type="text" name="personName" autocomplete="off">
+
+         <label>GENDER</label>
+                
+                 <select class="form-control chosenn" name="gender" required="required">
+                   <option value="" selected>GENDER</option>
+                   <option value="Male">MALE</option>
+                   <option value="Female">FEMALE</option>
+                   <option value="Other">OTHER</option>
+                 </select>
+              
+
+         <label>AGE</label>
+        <input class="form-control" type="text" name="age" autocomplete="off">
+
+       
+         <label>ROLE</label>
+                 <select class="form-control chosenn" name="role" required="required">
+                   <option value="" selected>ROLE</option>
+                   <option value="Male">ADMIN</option>
+                   <option value="Female">USER</option>      
+                 </select>
+
+               </div>
+           <button class="btn btn-primary" type="submit" name="button">REGISTER</button>
+
+    </form>
+
+    <%- include("partials/footer"); -%>

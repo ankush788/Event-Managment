@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+<h1> TICKET DETIAL</h1>
+
+<ul class="list-group">
+  <li class="list-group-item ">PERSON NAME = <%= ticket.personName %></li>
+  <li class="list-group-item">AGE = <%= ticket.age%> </li>
+  <li class="list-group-item"> GENDER = <%= ticket.gender%></li>
+  <li class="list-group-item ">TICKET ID =  <%= ticket._id %></li>
+  <li class="list-group-item">EVENT NAME = <%= ticket.event.eventName%></li>
+</ul>
+<%- include("partials/footer"); -%>

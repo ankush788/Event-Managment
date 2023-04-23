@@ -1,0 +1,78 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  
+ background-image: url("event.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+* 
+{
+   font-family: Arial, Helvetica, sans-serif;
+    color: #223e76;
+    
+}
+
+h1
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #282c30;
+  font-size: 5rem;
+}
+
+  p{
+    font-size: 20px;
+  }
+
+
+input[type="text"] , .chosenn,.list-group-item{
+  background-color: #888a8c;
+   margin-bottom:20px;
+}
+
+div .post-content
+{
+  display: flex;
+}
+
+
+.post-content button
+{
+  margin-left: 10x;
+}
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+
+
+.container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-left:  6.5rem; 
+    margin-right:3rem;
+}
+
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.form-control , button[type="submit"]{
+
+  margin-bottom: 10px;
+}
+
+label ,button[type="submit"]{
+  margin-top:10px;
+}

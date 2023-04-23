@@ -1,0 +1,21 @@
+
+<%- include("partials/header"); -%>
+<h1> NEW EVENT</h1>
+<form action ="/add_event" method="post" >
+ <div class="form-group">
+         <label>EVENT NAME</label>
+        <input class="form-control" type="text" name="eventName" autocomplete="off">
+
+         <label>LOCATION</label>
+        <input class="form-control" type="text" name="location" autocomplete="off">
+          
+        <label>PRICE OF TICKET</label>
+        <input class="form-control" type="text" name="price" autocomplete="off">
+
+          <label>DATE OF EVENT </label>
+       <input   type="date" id="date" name="date">
+        </div>
+        
+  <button class="btn btn-primary" type="submit" name="button">ADD EVENT</button>
+        </form>
+<%- include("partials/footer"); -%>

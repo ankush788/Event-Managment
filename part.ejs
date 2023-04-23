@@ -1,0 +1,53 @@
+<!-- 
+         <div class="form-group">
+         <select class="form-control chosenn" name="eventName" required="required">
+           <option value="" selected>eventName</option>
+           
+        <% for( let event of events ){ %>
+
+   <option value = "<%= event.eventName %> "> <%= event.eventName %>></option>
+
+    <% } %>
+         </select>
+         </div> -->
+
+<!--          
+  <% for( let post of posts ){ %>
+
+    <h1><%=post.title%></h1>
+    <p>
+    <div class = "post-content">
+    <%=post.body.substring(0, 100) + " ..."%>
+    <a href="/post/<%= post._id %>" >Read More</a>
+    </p>
+
+    <form action="/delete" method="post" >
+    <button style ="margin-left: 50px;" class="btn btn-danger"  type ="submit" name="Id" value= <%= post._id %> ><i class="fa-solid fa-trash"></i></button>
+    </form>
+
+</div>
+    <% } %> -->
+
+<!-- 
+     <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">UTSAV</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+
+
+          <li id="home"><a href="/">HOME</a></li>
+          <li id="about"><a href="/about">ABOUT US</a></li>
+          <li id="register"><a href="/registration">REGISTER</a></li>
+          <li>
+         </li>
+             <li id="manage"><a href="/manage">MANAGE EVENT</a></li>
+             <li id="add_ticket"><a href="/add_ticket">ADD TICKET</a></li>
+             <li id=detail"><a href="/detail_query">DETAIL</a></li>
+
+             <li id=add_event"><a href="/add_event">ADD EVENT</a></li>
+             
+        </ul>
+    </div>
+  </nav> -->
